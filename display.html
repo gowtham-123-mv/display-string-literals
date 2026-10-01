@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>React String Literals</title>
+
+    <!-- React -->
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+
+    <!-- Babel -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+
+<body>
+
+    <div id="root"></div>
+
+    <script type="text/babel">
+
+        function App() {
+            const name = "kalyan!!";
+            const course = "B.Tech CSE";
+
+            return (
+                <div>
+                    <h1>String Literals in React</h1>
+
+                    <p>Hello, {name}</p>
+                    <p>You are studying {course}.</p>
+
+                    <p>{`Welcome ${name} to React Programming.`}</p>
+                </div>
+            );
+        }
+
+        ReactDOM.createRoot(
+            document.getElementById("root")
+        ).render(<App />);
+
+    </script>
+
+</body>
+</html>
